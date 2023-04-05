@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de exemplo estrutura basica</title>
+</head>
+ <Style>
+    body{
+        font-size:22px ;
+        font family: sans-serif;
+        width:700px;
+        margin: auto; /* para centralizar */ 
+        /* colocando imagens de fundo da pagina inteira */ 
+        background-image: url(fundo-site-home.jpg);
+        /* não quero que a imagem fique repetindo */ 
+        background-repeat: no-repeat;
+        /*posso escolher o eixo que o texto vai usando x ou y */ 
+        /*  background-size; contain; vai utilizar a área inteira */ 
+        /* background-position:right bottom; -> o primeiro valor eixo horizontal e o outro no vertical */ 
+    }
+    p{
+        line-height: 1.5; /* da u, espaçamento entre as letras */ 
+    }
+    .img-html{
+     float:left;
+    }
+    .img-css{
+     float:right;
+    }
+    /* o float faz com que a imagem fique flutuando entre o texto */ 
+    
+ </Style>
+
+<body>
+    <!--img src "..." alt="..."( o atributo alt é para ser identificado)-->
+    <!--no css é só para fim estético, logo : background-image:url(..);-->
+    <img src="html5.png.png" class="img-html" alt="a logo do html">
+    <!--criei uma class para ser linkada no css-->
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptates voluptatem nobis nostrum nam, cumque, 
+        recusandae velit exercitationem corporis neque temporibus asperiores vitae veritatis incidunt eligendi saepe vel dolores aspernatur.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate dolorum eius expedita q
+        uaerat vitae iure recusandae id ullam quae molestias quos aperiam aliquid labore temporibus aliquam sit, officia eaque nihil.</p>
+    <img src="css.png.png" class="img-css" alt="logo do css">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptates voluptatem nobis nostrum nam, cumque, 
+        recusandae velit exercitationem corporis neque temporibus asperiores vitae veritatis incidunt eligendi saepe vel dolores aspernatur.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptates voluptatem nobis nostrum nam, cumque, 
+        recusandae velit exercitationem corporis neque temporibus asperiores vitae veritatis incidunt eligendi saepe vel dolores aspernatur.</p>
+</body>
+</html>
