@@ -1,0 +1,56 @@
+body{
+    font-family: arial,sans-serif;
+    background-color: #ccc;
+}
+.hero{
+    background-image: url(../imagens/Imagens/bg-3.jpg);
+    height: 500px ;
+    margin: 0;
+    background-position: right center;
+    background-size: cover;
+}
+h1{
+    text-align:  center;
+}
+.hero-content{
+    text-align: center;
+    color:white ;
+    margin-top: 150px; /* o margin top joga para baixo o item */
+}
+.hero-content h1{
+    /* isso só vai formatar o "h1" que está dentro do hero-content*/
+    text-transform: uppercase;
+    font-size: 46px ;
+    text-shadow: 3px 3px 2px #333  ;
+    /* primeiro o deslocamento na vertical o segundo na horizontal e o outro o nivel de transparencia e tipo de preenchimendo */
+
+}
+main{
+/*só existe um main no site */
+width: 80%;
+margin: auto;
+/* o margin auto foi colocado para centralizar o conteudo da page */ 
+}
+.content-section{
+    background-color: white;  /* fazer um preenchimento branco dentro */ 
+    padding: 15px;
+    margin-top: 15px;
+}
+footer{
+    background-color:  #6b6c68;
+    text-align: center;
+    color: white;
+    height: 120px;
+    font-size: 14px; 
+    text-shadow: 2px 2px 2px black;  
+    line-height: 120px;     
+    
+}
+ .top h2{
+    background-color: #d6d6d6;
+    
+}
+  .top{
+    border-style: solid;
+    
+  }
