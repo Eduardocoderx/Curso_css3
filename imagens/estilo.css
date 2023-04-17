@@ -8,6 +8,8 @@ body{
     margin: 0;
     background-position: right center;
     background-size: cover;
+    border-top:1px solid transparent;
+    /* deixar uma borda emcima dos menus para não ficar tudo branco */
 }
 h1{
     text-align:  center;
@@ -25,16 +27,28 @@ h1{
     /* primeiro o deslocamento na vertical o segundo na horizontal e o outro o nivel de transparencia e tipo de preenchimendo */
 
 }
+.hero-content p
 main{
 /*só existe um main no site */
 width: 80%;
 margin: auto;
 /* o margin auto foi colocado para centralizar o conteudo da page */ 
 }
+.hero-content p{
+    background-color: rgba(0,0,0,0.7);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white ;
+    margin-left: 1%;
+
+  
+}
 .content-section{
     background-color: white;  /* fazer um preenchimento branco dentro */ 
-    padding: 15px;
+    padding: 10px;
     margin-top: 15px;
+    overflow:auto ;/*corrigir o tamanho dos itens / cards presentes no site  */
+
 }
 footer{
     background-color:  #6b6c68;
@@ -54,3 +68,79 @@ footer{
     border-style: solid;
     
   }
+  .hero nav ul{
+    text-align: right;
+    ;
+    margin: 20px 50px 0 0; 
+    /* 20- top 50-direita 0- para baixo 0- para esquerda */
+  }
+  .hero nav li{
+   display: inline-block; 
+   /* faz se comportar como elemento de linha ( como uma única,linha) */
+   list-style:none ;
+   border:1px solid white ;
+   margin-left: 10px;
+  
+  }
+  .hero nav a{
+    background:rgba(0,0,0,0.5);
+    /* a letra "a" do rgba modifica a transparência do item */
+    display: block;
+    padding: 10px; /* para modificar o tamanho do display ( espaço de preenchimento) */
+    color: white; 
+    /* se eu não colocar o tamanho do display não vai dar certo o fundo do menu, pois vai
+    se comportar como elemento de linha */
+    text-decoration:none ;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing : 2px;
+    /* dar espaço entre os menus ) */
+  }
+  .hero nav a:hover{
+    background:rgba(0,0,0,0.7);
+
+  }
+  .card{
+    width: 32%; /* 33% de largura */ 
+    float: left;
+    box-sizing: border-box;
+    /* deixa os blocos em ordem */ 
+   
+    box-sizing:border-box ;
+  }
+  card-1, .card-2{
+    margin-right:2% ;
+
+  }
+
+  .card img{ 
+    width: 100%; /* deixar o card com a imagem em 100% */
+    display: block;
+
+
+    /* abre o card das imagens */ 
+
+  }
+  .card p{
+    background-color:black ;
+    color: white; 
+    /* cores de textos nos cards */
+    margin: 0;
+    padding: 15px;
+  }
+ .rodape{
+    height: 80px;
+    color: white; 
+    font-size: center;
+    text-align:center ;
+    text-shadow: 2px 2px 2px black;
+    background:#6b6c68; 
+    line-height: 80px;
+
+
+
+
+
+
+
+}
